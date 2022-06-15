@@ -1,0 +1,6 @@
+#All A=aviable Queries
+type Query{
+
+    bankAccount(id:ID!):BankAccount
+
+}

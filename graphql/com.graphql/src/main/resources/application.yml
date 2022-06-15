@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: GraphQl_App_java
+
+
+server:
+  http2:
+    enabled: true
+  port: 8081
+
+  graphql:
+    enabled: true
+    graphiql: true
+
