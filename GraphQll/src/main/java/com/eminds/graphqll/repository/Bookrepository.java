@@ -13,9 +13,14 @@ import java.util.List;
 public class Bookrepository {
     private List<Book> books = new ArrayList<>();
 
+    @Autowired
+    private AuthorRepository authorRepository;
+
 
 
     public List<Book> findAll() {
+
+         books.add(new Book(1,"harry potter",355,authorRepository.findByName("vijay")));
 
 
         return books;
@@ -25,11 +30,7 @@ public class Bookrepository {
         return books.stream().filter(book -> book.getId() == id).findFirst().orElseThrow(() -> new RuntimeException("Book not found"));
     }
 
-    @PostConstruct
-    private void init() {
-        books.add(new Book(1,"Reactive Spring", 484,"vijay"));
-        books.add(new Book(2,"Spring Boot Up & Running", 328,"Karal Saritha"));
-        books.add(new Book(3,"Hacking with Spring Boot 2.3", 392,"karal"));
-    }
+
+
 
 }

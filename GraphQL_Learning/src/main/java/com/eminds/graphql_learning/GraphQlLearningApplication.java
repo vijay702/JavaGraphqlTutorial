@@ -44,6 +44,7 @@ class CustomerGraphQlController{
 interface CustomerRepository extends  ReactiveCrudRepository<Customer,Integer>{
 
 
+
 }
 
 class Customer {

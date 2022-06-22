@@ -3,7 +3,7 @@ type Book{
 
   title: String
   pages: Int !
-  author :String
+  author :Author
 }
 
 

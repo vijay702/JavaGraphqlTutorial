@@ -1,12 +1,12 @@
 type Query{
 
-    Customers : [Customer]
+    customers : [Customer]
 
 }
 
 
 
-type Customer{
+type  Customer{
 
 
     id: ID

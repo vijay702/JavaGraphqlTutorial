@@ -5,18 +5,17 @@ public class Book {
     private Integer id ;
     private String title;
     private Integer pages;
-    private String author;
+    private Author author;
 
     public Book() {
     }
 
-    public Book(Integer id, String title, Integer pages, String author) {
+    public Book(Integer id, String title, Integer pages, Author author) {
         this.id = id;
         this.title = title;
         this.pages = pages;
         this.author = author;
     }
-
 
 
     public Integer getId() {
@@ -43,11 +42,11 @@ public class Book {
         this.pages = pages;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public String SetAuthor(String author) {
+    public Author SetAuthor(Author author) {
         return this.author = author;
     }
 }

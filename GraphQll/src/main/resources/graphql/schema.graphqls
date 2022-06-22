@@ -4,4 +4,3 @@ type  Query{
     findOne(id:ID!):Book
 }
 
-
